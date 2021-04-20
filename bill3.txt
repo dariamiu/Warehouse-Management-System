@@ -1,0 +1,9 @@
+Order : 31
+Customer : Alex Rusu
+Products:                Quantity:  Price:  Total:
+almond butter            1          20.0     20.0
+coconut oil              1          15.0     15.0
+hemp seeds               1          14.0     14.0
+dates                    5          15.0     75.0
+Total:
+124.0
