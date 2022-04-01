@@ -1,0 +1,6 @@
+Order : 36
+Customer : Paula Bucur
+Products:                Quantity:  Price:  Total:
+cashew nuts              1          16.0     16.0
+Total:
+16.0

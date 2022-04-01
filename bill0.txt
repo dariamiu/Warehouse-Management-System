@@ -1,0 +1,6 @@
+Order : 33
+Customer : Paula Bucur
+Products:                Quantity:  Price:  Total:
+hemp seeds               2          14.0     28.0
+Total:
+28.0

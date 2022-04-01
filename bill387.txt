@@ -1,0 +1,6 @@
+Order : 38
+Customer : Alina Popescu
+Products:                Quantity:  Price:  Total:
+hemp seeds               1          14.0     14.0
+Total:
+14.0

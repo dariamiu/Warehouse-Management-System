@@ -7,6 +7,8 @@ import javax.swing.table.TableColumnModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,6 +42,8 @@ public class CustomerView extends AppFrame<Customer>{
     private JButton update = new JButton("update");
     private JButton delete = new JButton("delete");
     private JButton show = new JButton("show");
+
+    private JButton alabala = new JButton("heihei");
 
     public CustomerView() {
 
@@ -114,7 +118,7 @@ public class CustomerView extends AppFrame<Customer>{
     private void constructView(){
         viewClients.setLayout(null);
         scrollPane = new JScrollPane();
-        scrollPane.setBounds(50,130,490,300);
+        scrollPane.setBounds(50,130,490,75);
 
         viewClients.add(scrollPane);
         searchText.setBounds(239,50,120,30);
@@ -123,7 +127,6 @@ public class CustomerView extends AppFrame<Customer>{
         viewClients.add(searchButton);
         viewClients.add(searchText);
         viewClients.add(viewAll);
-
         JLabel nameLabel = new JLabel("introduce name");
         nameLabel.setBounds(120,50,100,30);
         viewClients.add(nameLabel);
@@ -214,6 +217,20 @@ public class CustomerView extends AppFrame<Customer>{
         tcm.getColumn(2).setPreferredWidth(100);
         tcm.getColumn(3).setPreferredWidth(180);
         table.setColumnModel(tcm);
+        table.setColumnSelectionAllowed(false);
+        table.setRowSelectionAllowed(true);
+       /* table.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                JTable target = (JTable)e.getSource();
+                int row = target.getSelectedRow();
+                System.out.println(row);
+                target.removeRowSelectionInterval(row,row);
+
+            }
+        });*/
+        int [] rows = table.getSelectedRows();
+        for (int row : rows) System.out.println(row);
         scrollPane.getViewport().add(table);
 
     }

@@ -51,6 +51,7 @@ public class AppFrame<T> extends JFrame {
             columnNames[i] = field.getName();
             i++;
         }
+
         DefaultTableModel model = new DefaultTableModel(columnNames, 0);
         for (Object object : objects) {
             String[] result = new String[size];
@@ -66,6 +67,7 @@ public class AppFrame<T> extends JFrame {
             }
             model.addRow(result);
         }
+
         JTable table = new JTable( model );
         return table;
     }

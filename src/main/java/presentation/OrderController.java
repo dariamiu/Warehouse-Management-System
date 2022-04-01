@@ -1,17 +1,17 @@
 package presentation;
 
 import businessLogic.*;
+import com.sun.jdi.IntegerValue;
 import model.Order;
 import model.OrderProduct;
 import model.Product;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * Class to control the OrderView interface
@@ -30,6 +30,8 @@ public class OrderController {
     private int idCurrentOrder;
     private int billNumber;
     private FileWriter fw;
+    private FileWriter fw2;
+    private FileReader fr2;
 
     public OrderController(){
         orderBLL = new OrderBLL();
@@ -257,7 +259,8 @@ public class OrderController {
     private String createFile(){
         StringBuilder fileName = new StringBuilder();
         fileName.append("./bill");
-        fileName.append(billNumber);
+        fileName.append(order.getId_order() + "_");
+        fileName.append(order.getId_customer());
         fileName.append(".txt");
         File file = new File(fileName.toString());
         boolean result;

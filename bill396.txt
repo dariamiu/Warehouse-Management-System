@@ -1,0 +1,6 @@
+Order : 39
+Customer : Alex Rusu
+Products:                Quantity:  Price:  Total:
+hemp seeds               1          14.0     14.0
+Total:
+14.0

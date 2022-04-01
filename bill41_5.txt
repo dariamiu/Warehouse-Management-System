@@ -1,0 +1,7 @@
+Order : 41
+Customer : Mihai Pop
+Products:                Quantity:  Price:  Total:
+coconut oil              1          15.0     15.0
+cashew nuts              1          16.0     16.0
+Total:
+31.0

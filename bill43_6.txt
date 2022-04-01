@@ -1,0 +1,7 @@
+Order : 43
+Customer : Alex Rusu
+Products:                Quantity:  Price:  Total:
+hemp seeds               1          14.0     14.0
+almond flour             1          30.0     30.0
+Total:
+44.0
